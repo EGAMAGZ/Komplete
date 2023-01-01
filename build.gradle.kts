@@ -27,6 +27,9 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
+                api(compose.foundation)
+                api(compose.preview)
+                api(compose.materialIconsExtended)
             }
         }
         val jvmTest by getting
